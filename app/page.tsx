@@ -25,6 +25,7 @@ interface Resource {
   wordCount: number;
   accessible: boolean;
   description: string;
+  content: string[];
 }
 
 const resources: Resource[] = [
@@ -38,6 +39,12 @@ const resources: Resource[] = [
     wordCount: 120,
     accessible: true,
     description: "A classic story retold with strictly CVC words. Perfect for early decodable practice.",
+    content: [
+      "The hen sat in the pen. She had ten eggs. Jen and Bev ran to look.",
+      "“Will they hatch?” said Jen. “Yes, but we must wait,” said Bev.",
+      "They sat by the pen and did not fret. Then one egg got a crack in it!",
+      "A wet, little chick sat up. The hen was glad. Jen and Bev were glad too.",
+    ],
   },
   {
     id: 2,
@@ -49,6 +56,12 @@ const resources: Resource[] = [
     wordCount: 98,
     accessible: true,
     description: "Silly rhyming story with /u/ and /o/ words. High engagement for kindergartners.",
+    content: [
+      "A slug sat on a log in the mud. “I am stuck,” said the slug.",
+      "A bug ran up. “Tug and pull,” said the bug. They tugged and tugged.",
+      "Plop! The slug rolled off the log and into the mud.",
+      "“Fun!” said the slug. The bug had fun too. They sat in the mud all day.",
+    ],
   },
   {
     id: 3,
@@ -60,6 +73,12 @@ const resources: Resource[] = [
     wordCount: 210,
     accessible: false,
     description: "Adventures at a muddy summer camp. Introduces initial blends in context.",
+    content: [
+      "At Camp Mud, the kids slept in tents and ran down the slick, sloppy hill.",
+      "Clint grabbed a stick to stir the thick, black mud. “Let's build a fort!” said Clint.",
+      "They stacked sticks and slid mud on top. By the end, the fort stood tall and strong.",
+      "Camp Mud was the best week of the summer.",
+    ],
   },
   {
     id: 4,
@@ -71,6 +90,12 @@ const resources: Resource[] = [
     wordCount: 145,
     accessible: true,
     description: "A short nonfiction passage about rockets. Great for final blend practice.",
+    content: [
+      "A rocket can blast off fast. First, it must stand on a launch pad.",
+      "Then a crew checks each part and runs a test. When it is time, the engines burst with light.",
+      "The rocket lifts off the land and zooms past the clouds.",
+      "It does not stop until it is in space.",
+    ],
   },
   {
     id: 5,
@@ -82,6 +107,12 @@ const resources: Resource[] = [
     wordCount: 180,
     accessible: true,
     description: "A search-and-find story packed with digraph words. Predictable text pattern.",
+    content: [
+      "Where is the fish? It is not in the dish. It is not on the path.",
+      "Look! It is in the bath, under a wide, flat shell.",
+      "Wish you could see it shimmer and flash! The fish swishes its tail and dashes off, then hides with a splash.",
+      "Where will it go next?",
+    ],
   },
   {
     id: 6,
@@ -93,6 +124,12 @@ const resources: Resource[] = [
     wordCount: 230,
     accessible: false,
     description: "An unlikely friendship story. Dense ch and -tch practice throughout.",
+    content: [
+      "Chip the chick did not match the other chicks on the ranch.",
+      "He liked to watch the cheetah stretch and catch bugs by the ditch.",
+      "One day, Chip got stuck in a patch of thatch. The cheetah saw him and gave a quick tug.",
+      "From then on, Chip and the cheetah were the best of pals.",
+    ],
   },
   {
     id: 7,
@@ -104,6 +141,12 @@ const resources: Resource[] = [
     wordCount: 195,
     accessible: true,
     description: "A baking story that doubles as a silent-e showcase. Students love the ending.",
+    content: [
+      "Jake wants to bake a cake. He gets a plate, a cup, and a pan.",
+      "He shakes in flour and a pinch of salt. Then he stirs and stirs.",
+      "He slides the cake in to bake. While it bakes, Jake takes a short hike outside.",
+      "When he comes back, the cake is done — and it smells just fine!",
+    ],
   },
   {
     id: 8,
@@ -115,6 +158,12 @@ const resources: Resource[] = [
     wordCount: 160,
     accessible: true,
     description: "Nonfiction-style passage about kite flying. Targets i_e and o_e patterns.",
+    content: [
+      "Mike likes to fly his kite by the lake. The wind blows, and the kite rides high in the sky.",
+      "It dives, glides, and twists in time with the breeze.",
+      "Mike smiles as he holds tight to the line. The kite shines like a star against the white clouds.",
+      "It is the best ride yet.",
+    ],
   },
   {
     id: 9,
@@ -126,6 +175,12 @@ const resources: Resource[] = [
     wordCount: 290,
     accessible: true,
     description: "A rainy-day adventure packed with ai and ay words from start to finish.",
+    content: [
+      "On a rainy day, Gail and Jay rode the train. Rain ran down the windowpane in tiny trails.",
+      "“I hope it does not rain all day,” said Gail.",
+      "The train sailed past a bay, a plain, and a tray of hay.",
+      "By the time they reached the station, the rain had gone away, and the sun came out to play.",
+    ],
   },
   {
     id: 10,
@@ -137,6 +192,12 @@ const resources: Resource[] = [
     wordCount: 320,
     accessible: false,
     description: "A humorous story about a seal who crashes a picnic. Targets ee and ea vowel teams.",
+    content: [
+      "At the beach, a sneaky seal crept near a picnic to eat a treat.",
+      "He saw cheese, peaches, and a sweet bean salad. He reached out and — whoosh — grabbed a peach in his teeth!",
+      "The kids laughed to see him sneak away.",
+      "He waved his fins and dove deep into the sea, pleased with his feast.",
+    ],
   },
   {
     id: 11,
@@ -148,6 +209,12 @@ const resources: Resource[] = [
     wordCount: 270,
     accessible: true,
     description: "A problem-solution story about garden visitors. Rich in r-controlled vowel patterns.",
+    content: [
+      "Each morning, a deer slips into the garden to nibble herbs and ferns.",
+      "The girl who tends the garden is not stirred — she just smiles and waits.",
+      "One day, she sets out a bird feeder near the curb to give the deer something else to munch on.",
+      "After that, the deer turns toward the feeder first, and the herbs are safe.",
+    ],
   },
   {
     id: 12,
@@ -159,6 +226,12 @@ const resources: Resource[] = [
     wordCount: 210,
     accessible: false,
     description: "Nonfiction passage about extreme sports. Focuses on ar and or patterns.",
+    content: [
+      "At the shore, surfers wait for the perfect wave. Some sport boards that are short; others like them long and broad.",
+      "The crowd roars as a surfer carves a sharp turn near the shore.",
+      "Stars of the sport perform tricks that seem to defy the storm of spray around them.",
+      "It's a sport for the bold and the hardy.",
+    ],
   },
   {
     id: 13,
@@ -170,6 +243,12 @@ const resources: Resource[] = [
     wordCount: 480,
     accessible: true,
     description: "A chapter book excerpt exploring un- and re- prefixes in a mystery setting.",
+    content: [
+      "Mara was unhappy when her plans were unexpectedly canceled.",
+      "She decided to rebuild her schedule and revisit an old hobby instead.",
+      "As she unpacked a dusty box, she found a letter she had never read. It was unsigned, but the handwriting looked familiar.",
+      "Mara couldn't resist — she had to uncover who had written it.",
+    ],
   },
   {
     id: 14,
@@ -181,6 +260,12 @@ const resources: Resource[] = [
     wordCount: 350,
     accessible: true,
     description: "An informational text about reptiles. Strong VCCV and VCV syllable division practice.",
+    content: [
+      "Reptiles are animals with dry, scaly skin.",
+      "Most reptiles, such as lizards and snakes, live on land, though some, like turtles, spend time in water.",
+      "Unlike mammals, reptiles cannot regulate their own body temperature, so they often rest in sunlight to get warm.",
+      "Scientists continue to study how reptiles survive in such a wide variety of habitats.",
+    ],
   },
   {
     id: 15,
@@ -192,6 +277,12 @@ const resources: Resource[] = [
     wordCount: 60,
     accessible: true,
     description: "A curated word list for fluency drills and word sorting activities.",
+    content: [
+      "bl — black, blast, bloom, blend",
+      "cl — clap, clip, clock, club",
+      "sl — slip, slug, sled, slow",
+      "st — stop, stamp, stand, step",
+    ],
   },
   {
     id: 16,
@@ -203,6 +294,11 @@ const resources: Resource[] = [
     wordCount: 80,
     accessible: true,
     description: "Comprehensive word list covering all major vowel teams. Great for weekly review.",
+    content: [
+      "ai / ay — rain, mail, paint, play, stay, tray",
+      "ee / ea — tree, seed, sleep, leaf, team, beach",
+      "oa / ow — boat, coat, soap, snow, grow, slow",
+    ],
   },
 ];
 
@@ -239,17 +335,12 @@ function StagePill({ stage }: { stage: Stage }) {
   );
 }
 
-function ResourceCard({
-  resource,
-  added,
-  onToggle,
-}: {
-  resource: Resource;
-  added: boolean;
-  onToggle: () => void;
-}) {
+function ResourceCard({ resource, onOpen }: { resource: Resource; onOpen: () => void }) {
   return (
-    <div className="bg-white rounded-xl border border-stone-200 p-5 flex flex-col gap-3 hover:shadow-sm transition-shadow">
+    <button
+      onClick={onOpen}
+      className="text-left bg-white rounded-xl border border-stone-200 p-5 flex flex-col gap-3 hover:shadow-sm hover:border-stone-300 transition-all"
+    >
       <div className="flex items-start justify-between gap-2">
         <div className="flex flex-wrap gap-1.5">
           <StagePill stage={resource.stage} />
@@ -278,16 +369,74 @@ function ResourceCard({
             </span>
           )}
         </div>
-        <button
-          onClick={onToggle}
-          className={`text-xs font-medium px-3 py-1.5 rounded-lg transition-colors ${
-            added
-              ? "bg-emerald-50 text-emerald-700 border border-emerald-200"
-              : "bg-stone-100 text-stone-600 hover:bg-stone-200 border border-transparent"
-          }`}
-        >
-          {added ? "Added ✓" : "Add to Lesson"}
-        </button>
+        <span className="text-xs font-medium px-3 py-1.5 rounded-lg bg-stone-100 text-stone-600">
+          Open →
+        </span>
+      </div>
+    </button>
+  );
+}
+
+function ResourceModal({ resource, onClose }: { resource: Resource; onClose: () => void }) {
+  return (
+    <div
+      className="fixed inset-0 z-20 flex items-center justify-center bg-stone-900/40 p-4"
+      onClick={onClose}
+    >
+      <div
+        className="bg-white rounded-2xl shadow-xl max-w-2xl w-full max-h-[85vh] overflow-y-auto"
+        onClick={(e) => e.stopPropagation()}
+      >
+        <div className="p-6 border-b border-stone-100 flex items-start justify-between gap-4">
+          <div>
+            <div className="flex flex-wrap gap-1.5 mb-2">
+              <StagePill stage={resource.stage} />
+              <span className="text-xs px-2 py-0.5 rounded bg-stone-100 text-stone-500">{resource.type}</span>
+              <span className="text-xs px-2 py-0.5 rounded bg-stone-100 text-stone-500">Grade {resource.grade}</span>
+            </div>
+            <h2 className="text-xl font-semibold text-stone-900">{resource.title}</h2>
+            <p className="text-sm text-stone-500 mt-0.5">{resource.phonicsFocus} · {resource.wordCount} words</p>
+          </div>
+          <button
+            onClick={onClose}
+            className="text-stone-400 hover:text-stone-600 shrink-0 rounded-lg p-1.5 hover:bg-stone-100 transition-colors"
+            aria-label="Close"
+          >
+            <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+
+        <div className="p-6 flex flex-col gap-4">
+          {resource.type === "Word List" ? (
+            <div className="flex flex-col gap-2">
+              {resource.content.map((line, i) => (
+                <p key={i} className="text-base text-stone-700 leading-relaxed font-mono bg-stone-50 rounded-lg px-4 py-2.5 border border-stone-100">
+                  {line}
+                </p>
+              ))}
+            </div>
+          ) : (
+            <div className="flex flex-col gap-3">
+              {resource.content.map((paragraph, i) => (
+                <p key={i} className="text-base text-stone-700 leading-relaxed">
+                  {paragraph}
+                </p>
+              ))}
+            </div>
+          )}
+
+          {resource.accessible && (
+            <p className="text-xs text-stone-400 flex items-center gap-1.5 pt-2 border-t border-stone-100">
+              <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+              </svg>
+              An accessible version of this resource is available.
+            </p>
+          )}
+        </div>
       </div>
     </div>
   );
@@ -299,8 +448,8 @@ export default function Page() {
   const [selectedStages, setSelectedStages] = useState<Set<Stage>>(new Set());
   const [selectedGrades, setSelectedGrades] = useState<Set<Grade>>(new Set());
   const [selectedTypes, setSelectedTypes] = useState<Set<ResourceType>>(new Set());
-  const [lessonItems, setLessonItems] = useState<Set<number>>(new Set());
   const [search, setSearch] = useState("");
+  const [openResource, setOpenResource] = useState<Resource | null>(null);
 
   function toggleStage(s: Stage) {
     setSelectedStages((prev) => {
@@ -326,14 +475,6 @@ export default function Page() {
     });
   }
 
-  function toggleLesson(id: number) {
-    setLessonItems((prev) => {
-      const next = new Set(prev);
-      next.has(id) ? next.delete(id) : next.add(id);
-      return next;
-    });
-  }
-
   const filtered = resources.filter((r) => {
     if (selectedStages.size > 0 && !selectedStages.has(r.stage)) return false;
     if (selectedGrades.size > 0 && !selectedGrades.has(r.grade)) return false;
@@ -346,8 +487,6 @@ export default function Page() {
       return false;
     return true;
   });
-
-  const lessonCount = lessonItems.size;
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -368,29 +507,6 @@ export default function Page() {
               className="w-full text-sm px-3 py-1.5 rounded-lg border border-stone-200 bg-stone-50 placeholder:text-stone-400 focus:outline-none focus:ring-2 focus:ring-emerald-300"
             />
           </div>
-
-          <button
-            className={`flex items-center gap-2 text-sm font-medium px-4 py-1.5 rounded-lg transition-colors border ${
-              lessonCount > 0
-                ? "bg-emerald-600 text-white border-emerald-600 hover:bg-emerald-700"
-                : "bg-white text-stone-500 border-stone-200 hover:bg-stone-50"
-            }`}
-          >
-            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
-              />
-            </svg>
-            Plan Lesson
-            {lessonCount > 0 && (
-              <span className="bg-white text-emerald-700 text-xs font-bold px-1.5 py-0.5 rounded-full min-w-[20px] text-center">
-                {lessonCount}
-              </span>
-            )}
-          </button>
         </div>
       </header>
 
@@ -490,17 +606,14 @@ export default function Page() {
           ) : (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {filtered.map((r) => (
-                <ResourceCard
-                  key={r.id}
-                  resource={r}
-                  added={lessonItems.has(r.id)}
-                  onToggle={() => toggleLesson(r.id)}
-                />
+                <ResourceCard key={r.id} resource={r} onOpen={() => setOpenResource(r)} />
               ))}
             </div>
           )}
         </main>
       </div>
+
+      {openResource && <ResourceModal resource={openResource} onClose={() => setOpenResource(null)} />}
     </div>
   );
 }
