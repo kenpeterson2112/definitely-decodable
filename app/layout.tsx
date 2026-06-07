@@ -7,7 +7,7 @@ import { AppShell } from "@/components/app-shell";
 const geist = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Definitely Decodable",
+  title: "Sapling",
   description:
     "An adaptive decoding-intervention engine for intermediate and older struggling readers.",
 };

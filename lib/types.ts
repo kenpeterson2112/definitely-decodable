@@ -1,4 +1,4 @@
-// Core domain model for Definitely Decodable.
+// Core domain model for Sapling.
 // The product is built for intermediate / older struggling readers (grades 3+),
 // so the "scope & sequence" is multisyllabic decoding + morphology — not early CVC.
 

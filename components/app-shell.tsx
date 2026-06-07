@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import type { ReactNode } from "react";
 import { useData } from "@/lib/store";
 import { cx } from "@/lib/util";
+import { Brand } from "@/components/ui";
 
 interface NavItem {
   href: string;
@@ -55,9 +56,8 @@ const NAV: NavItem[] = [
 
 function Wordmark() {
   return (
-    <Link href="/" className="flex items-center gap-1 text-lg font-bold tracking-tight">
-      <span className="text-slate-900">Definitely</span>
-      <span className="text-indigo-600">Decodable</span>
+    <Link href="/" className="flex items-center">
+      <Brand />
     </Link>
   );
 }

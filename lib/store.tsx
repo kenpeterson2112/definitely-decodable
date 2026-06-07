@@ -23,6 +23,7 @@ import type {
 } from "./types";
 import { buildSeedData } from "./seed";
 import { clamp, statusFromMastery } from "./util";
+import { Brand } from "@/components/ui";
 
 const STORAGE_KEY = "dd:data:v3";
 
@@ -231,10 +232,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
 function BootSplash() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center gap-3 bg-slate-50">
-      <div className="flex items-center gap-1 text-xl font-bold tracking-tight">
-        <span className="text-slate-900">Definitely</span>
-        <span className="text-indigo-600">Decodable</span>
-      </div>
+      <Brand className="text-xl" />
       <div className="h-1.5 w-32 overflow-hidden rounded-full bg-slate-200">
         <div className="h-full w-1/2 animate-pulse rounded-full bg-indigo-500" />
       </div>

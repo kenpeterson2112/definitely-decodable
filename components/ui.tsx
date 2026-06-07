@@ -3,6 +3,25 @@ import type { MasteryStatus, SkillDomain } from "@/lib/types";
 import { SKILL_BY_ID, DOMAIN_STYLES } from "@/lib/scope";
 import { avatarStyle, cx, initials, statusStyle } from "@/lib/util";
 
+/** Brand wordmark: a sprouting leaf + "Sapling". */
+export function Brand({ className }: { className?: string }) {
+  return (
+    <span className={cx("inline-flex items-center gap-1.5 text-lg font-bold tracking-tight", className)}>
+      <svg viewBox="0 0 24 24" className="h-[1.15em] w-[1.15em]" aria-hidden>
+        <path d="M5 19C5 11 11 5 19 5c0 8-6 14-14 14Z" className="fill-emerald-500" />
+        <path
+          d="M8.5 16C11 13 14 10.5 17 8.5"
+          fill="none"
+          className="stroke-emerald-50"
+          strokeWidth="1.6"
+          strokeLinecap="round"
+        />
+      </svg>
+      <span className="text-slate-900">Sapling</span>
+    </span>
+  );
+}
+
 export function Card({ className, children }: { className?: string; children: ReactNode }) {
   return (
     <div className={cx("rounded-xl border border-slate-200 bg-white", className)}>{children}</div>
